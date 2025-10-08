@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import Logo from "../../public/images/logo/Logo.png";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -13,8 +14,8 @@ const Navbar = () => {
           </div>
         </div>
         <ul className=" flex items-center justify-center gap-[58px]">
-          <li>Home</li>
-          <li>Softwares</li>
+          <Link href="/">Home</Link>
+          <Link href="/softwares">Softwares</Link>
           <li>Tutorials</li>
           <li>Support</li>
         </ul>
