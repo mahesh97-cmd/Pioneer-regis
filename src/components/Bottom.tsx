@@ -5,7 +5,7 @@ type BottomProps={
   subHeading:string
 }
 
-const Bottom = ({heading,subHeading}) => {
+const Bottom = ({ heading, subHeading }: BottomProps) => {
   return (
     <div className="lg:px-12 px-6 lg:py-10  border-b-2 border-dashed border-gray-200 ">
       <div className="py-10">
