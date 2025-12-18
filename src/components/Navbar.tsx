@@ -10,7 +10,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { IoCloseOutline } from "react-icons/io5";
 
 const Navbar = () => {
-  console.log(window)
+  console.log(window);
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   return (
@@ -24,9 +24,7 @@ const Navbar = () => {
 
         <ul
           className={`flex ${
-            isOpen
-              ? "flex "
-              : "flex translate-x-8/6 lg:translate-x-0 "
+            isOpen ? "flex " : "flex translate-x-8/6 lg:translate-x-0 "
           }  lg:flex-row flex-col  bg-white/60 backdrop-blur-xs  lg:bg-transparent lg:w-auto w-3/4 absolute top-0 right-0 lg:relative lg:top-0  items-center  lg:h-auto h-screen z-40 justify-center lg:gap-[58px] gap-[20px]  lg:transition-none transition-all  duration-500 ease-linear`}
         >
           <li>
@@ -41,21 +39,45 @@ const Navbar = () => {
           <li>
             <Link
               href="/softwares"
-              className={pathname === "/softwares" ? "underline underline-offset-6" : ""}
+              className={
+                pathname === "/softwares" ? "underline underline-offset-6" : ""
+              }
               onClick={() => setIsOpen(false)}
             >
               Softwares
             </Link>
           </li>
-          <li>Tutorials</li>
-          <li>Support</li>
-          <li className="mt-8"><Button
-          name="Get Started"
-          bgColor="#3B3B3B"
-          textColor="#FFFFFF"
-          border="#E2E2E2"
-          isShow="lg:hidden block"
-        /></li>
+          <li>
+            <Link
+              href="/support"
+              className={
+                pathname === "/support" ? "underline underline-offset-6" : ""
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Support
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/tutorials"
+              className={
+                pathname === "/tutorials" ? "underline underline-offset-6" : ""
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Tutorials
+            </Link>
+          </li>
+          <li className="mt-8">
+            <Button
+              name="Get Started"
+              bgColor="#3B3B3B"
+              textColor="#FFFFFF"
+              border="#E2E2E2"
+              isShow="lg:hidden block"
+            />
+          </li>
         </ul>
 
         <Button
@@ -66,19 +88,19 @@ const Navbar = () => {
           isShow="lg:block hidden"
         />
         <div className="lg:hidden flex items-center z-50">
-        
-            <IoCloseOutline
-              onClick={() => setIsOpen(false)}
-              className={`h-7 w-7 cursor-pointer text-black transition-opacity duration-600 ease-out ${isOpen?"opacity-100 delay-300":"opacity-0"} `}
-            />
-         
-            <HiOutlineMenu
-              onClick={() => setIsOpen(true)}
-              className={`h-7 w-7 cursor-pointer text-black absolute transition-opacity duration-500 ease-out ${
-      isOpen ? "opacity-0 pointer-events-none" : "opacity-100 delay-300"
-    }`}
-            />
-          
+          <IoCloseOutline
+            onClick={() => setIsOpen(false)}
+            className={`h-7 w-7 cursor-pointer text-black transition-opacity duration-600 ease-out ${
+              isOpen ? "opacity-100 delay-300" : "opacity-0"
+            } `}
+          />
+
+          <HiOutlineMenu
+            onClick={() => setIsOpen(true)}
+            className={`h-7 w-7 cursor-pointer text-black absolute transition-opacity duration-500 ease-out ${
+              isOpen ? "opacity-0 pointer-events-none" : "opacity-100 delay-300"
+            }`}
+          />
         </div>
       </nav>
 

@@ -1,6 +1,8 @@
 import React from "react";
+import images from "../config/images";
+import Image from "next/image";
 
-const Bottom = ({heading,subHeading}) => {
+const Bottom = ({ heading, subHeading }) => {
   return (
     <div className="lg:px-12 px-6 lg:py-10  border-b-2 border-dashed border-gray-200 ">
       <div className="py-10">
@@ -11,13 +13,18 @@ const Bottom = ({heading,subHeading}) => {
           <p className="lg:text-[30px] text-xl ">{subHeading}</p>
           <p className="lg:text-[18px] text-base text-[#9C9C9C] pt-4">
             The must have essential software to run operations in a trusted
-            clinic.<br/> From your local general clinic to super speciality clinics.
+            clinic.
+            <br /> From your local general clinic to super speciality clinics.
           </p>
         </div>
       </div>
-      <div className="bg-amber-400 w-full lg:h-[500px] h-[200px]" >
-        
-
+      <div className="relative bg-amber-900 w-full lg:h-[500px] h-[200px]">
+        <Image
+          src={images.home}
+          alt="heroimage"
+          fill
+          className="object-cover"
+        />
       </div>
     </div>
   );
