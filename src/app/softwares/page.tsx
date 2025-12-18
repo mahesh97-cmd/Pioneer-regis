@@ -1,5 +1,8 @@
 import Button from "@/components/Button";
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
+import images from "../../config/images";
+import Image from "next/image";
 
 const Software = () => {
   return (
@@ -17,10 +20,18 @@ const Software = () => {
             </p>
           </div>
 
-          <div className="lg:w-[50%] w-full lg:py-0 py-10 ">
+          <div className="lg:w-[50%] w-full lg:py-0 py-10">
             <div className="flex justify-center items-center relative">
-              <div className="h-[193.49px] lg:w-[311px] w-full  bg-red-400 rounded-lg z-10"></div>
-              <div className="lg:block hidden h-[193.49px] lg:w-[311px] w-full bg-yellow-800 rounded-lg absolute lg:left-1/2  left-1 lg:bottom-1/2 "></div>
+              <div className="relative h-[193.49px] w-[311px] bg-red-400 rounded-lg z-10">
+                <Image
+                  src={images.softwareImg}
+                  alt="heroimage"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+
+              <div className="lg:block h-[193.49px] w-[311px] bg-gray-200 rounded-lg absolute lg:left-1/2 left-1 lg:bottom-1/2 bottom-3"></div>
             </div>
           </div>
         </div>
@@ -45,20 +56,61 @@ const Software = () => {
           </span>
         </div>
       </div>
-      <div className="w-full lg:px-12 px-8 my-2 p-2 flex flex-col lg:flex-row gap-4">
-        <div className="h-[250px] sm:h-[400px] lg:h-[500px] w-full lg:w-[900px] bg-[#D9D9D9] rounded-lg">
-          {/* <Image src={HeroImg1} alt="heroimage" width={700}/> */}
+
+      {/* Screenshots */}
+      {/* <div className="lg:p-12 p-8 pb-18 border-b-2 border-dashed border-[#D6D6D6] lg:space-y-16 space-y-10">
+
+        <div className="border border-[#D9D9D9] rounded-full w-[157px] text-end pr-5 py-0.5">
+          <span className="text-[14px]">Screenshot</span>
         </div>
 
-        <div className="flex flex-col sm:flex-row lg:flex-col gap-4 w-full lg:w-auto">
-          <div className="w-full sm:w-1/2 lg:w-[400px] h-[200px] sm:h-[240px] bg-[#D9D9D9] rounded-lg">
-            {/* <Image src={HeroImg1} alt="heroimage" width={400} height={200} /> */}
+        <div>
+          <div className="w-full flex lg:flex-row flex-col gap-4">
+            <div className="lg:w-[977px] h-[500px] bg-gray-100 rounded-lg"></div>
+            <div className="lg:space-y-4 space-x-4 flex lg:flex-col flex-row">
+              <div className="w-[400px] h-[242px] bg-gray-100 rounded-lg"></div>
+              <div className="w-[400px] h-[242px] bg-gray-100 rounded-lg"></div>
+            </div>
           </div>
-          <div className="w-full sm:w-1/2 lg:w-[400px] h-[200px] sm:h-[240px] bg-[#D9D9D9] rounded-lg">
-            {/* <Image src={HeroImg1} alt="heroimage" width={400} height={200} /> */}
+
+          <div className=" mt-7 flex items-center justify-end text-[#9C9C9C] gap-1 text-[14px]">
+            <span >View More Screenshots</span>
+            <span>
+              <BsArrowRight />
+            </span>
+          </div>
+        </div>
+      </div> */}
+      <div className="w-full lg:px-12 px-8 my-2 p-2 flex flex-col lg:flex-row gap-4">
+        <div className="relative h-[250px] sm:h-[400px] lg:h-[500px] w-full lg:w-[900px] rounded-lg overflow-hidden">
+          <Image
+            src={images.dashboard}
+            alt="heroimage"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        <div className="flex flex-col sm:flex-row lg:flex-col gap-4 w-full lg:w-auto ">
+          <div className="relative w-full sm:w-1/2 lg:w-[400px] h-[200px] sm:h-[240px] bg-[#D9D9D9] rounded-lg p-2">
+            <Image
+              src={images.dashboard}
+              alt="heroimage"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+          <div className="relative w-full sm:w-1/2 lg:w-[400px] h-[200px] sm:h-[240px] bg-[#D9D9D9] rounded-lg">
+            <Image
+              src={images.dashboard}
+              alt="heroimage"
+              fill
+              className="object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>
+
       <div className="lg:p-12 p-8 border-b-2 border-dashed border-[#D6D6D6] ">
         <div className="w-full flex lg:flex-row flex-col justify-between items-start lg:space-y-16 space-y-10">
           <div className="lg:w-[60%] w-full ">
@@ -72,7 +124,7 @@ const Software = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
               turpis dui,
               <span className="text-[#1100FF]">
-              
+                {" "}
                 eleifend accumsan quam. Nunc non leo vestibulum, laoreet tortor
                 sed, suscipit enim.
               </span>
@@ -91,10 +143,19 @@ const Software = () => {
           <span className="text-[14px]">Training Resources</span>
         </div>
         <div className="w-full flex lg:flex-row flex-col lg:items-center gap-5 ">
-          <div className="lg:w-1/4  w-full h-[345px] bg-gray-100 rounded-lg"></div>
-          <div className="lg:w-1/4  w-full h-[345px] bg-gray-100 rounded-lg"></div>
-          <div className="lg:w-1/4  w-full h-[345px] bg-gray-100 rounded-lg"></div>
-          <div className="lg:w-1/4  w-full h-[345px] bg-gray-100 rounded-lg"></div>
+          {images.bottom.map((img, inx) => (
+            <div
+              key={inx}
+              className=" relative lg:w-1/4  w-full h-[345px] bg-gray-100 rounded-lg"
+            >
+              <Image
+                src={img}
+                alt="heroimage"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -104,16 +165,16 @@ const Software = () => {
         </div>
         <div className=" flex flex-col items-center justify-center gap-2">
           <div className="lg:text-[38px] md:text-3xl text-[13px]  flex flex-col items-center">
-            <span>Become a</span>
-            <span>Certified Connected Clinic Operator </span>
+            <h6>Become a</h6>
+            <h6>Certified Connected Clinic Operator </h6>
           </div>
 
           <div className=" flex items-center justify-center">
             <p className="text-[#9C9C9C] lg:text-[18px] md:text-sm text-xs text-center">
               Nulla facilisi. Fusce sit amet arcu nec enim fringilla lacinia. Ut
-              elit <br className="lg:block hidden"/>
+              elit <br />
               sapien, porttitor eget diam et, dictum sagittis urna. Fusce sit
-              <br className="lg:block hidden"/>
+              <br />
               amet mi pellentesque, volutpat eros a, consectetur neque.
             </p>
           </div>
