@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Button from "./Button";
 import Image from "next/image";
 import Logo from "../../public/images/logo/Logo.png";

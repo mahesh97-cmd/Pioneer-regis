@@ -1,6 +1,5 @@
 import Button from "@/components/Button";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 
 const Software = () => {
   return (

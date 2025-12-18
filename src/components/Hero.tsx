@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import HeroImg1 from "../../public/Rectangle 4.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Bottom from "./Bottom";
 
@@ -26,15 +24,12 @@ const Hero = () => {
 
   <div className="w-full my-2 p-2 flex flex-col lg:flex-row gap-4">
     <div className="h-[250px] sm:h-[400px] lg:h-[500px] w-full lg:w-[900px] bg-[#D9D9D9] rounded-lg">
-      {/* <Image src={HeroImg1} alt="heroimage" width={700}/> */}
     </div>
 
     <div className="flex flex-col sm:flex-row lg:flex-col gap-4 w-full lg:w-auto">
       <div className="w-full sm:w-1/2 lg:w-[400px] h-[200px] sm:h-[240px] bg-[#D9D9D9] rounded-lg">
-        {/* <Image src={HeroImg1} alt="heroimage" width={400} height={200} /> */}
       </div>
       <div className="w-full sm:w-1/2 lg:w-[400px] h-[200px] sm:h-[240px] bg-[#D9D9D9] rounded-lg">
-        {/* <Image src={HeroImg1} alt="heroimage" width={400} height={200} /> */}
       </div>
     </div>
   </div>

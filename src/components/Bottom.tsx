@@ -1,5 +1,10 @@
 import React from "react";
 
+type BottomProps={
+  heading:string,
+  subHeading:string
+}
+
 const Bottom = ({heading,subHeading}) => {
   return (
     <div className="lg:px-12 px-6 lg:py-10  border-b-2 border-dashed border-gray-200 ">
