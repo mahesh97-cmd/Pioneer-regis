@@ -1,7 +1,6 @@
 const Separator = () => {
   return (
     <div className="relative w-full">
-      {/* <div className="border-b border-dashed border-[#E0E0E0]" /> */}
       <div
         className="border-b-2"
         style={{

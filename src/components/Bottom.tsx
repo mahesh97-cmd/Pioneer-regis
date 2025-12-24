@@ -1,7 +1,5 @@
-import React from "react";
 import images from "../config/images";
 import Image from "next/image";
-import Separator from "./Separator";
 
 type BottomProps={
   heading:string,

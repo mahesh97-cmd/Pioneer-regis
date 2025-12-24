@@ -8,10 +8,8 @@ import Section from "@/components/Section";
 
 const Software = () => {
   return (
-    <div className="font-dm-sans">
-      <div
-        className=" w-full md:min-h-[367px] py-10  lg:px-14 md:px-10 px-5 flex flex-col justify-end"
-      >
+    <div>
+      <div className=" w-full md:min-h-[367px] py-10  lg:px-14 md:px-10 px-5 flex flex-col justify-end">
         <div className="flex md:flex-row flex-col justify-between md:gap-8 lg:pb-0 md:pb-3 pb-0">
           <div className="flex-1 md:w-[50%] w-full flex items-start ">
             <div className="md:space-y-5 space-y-3">

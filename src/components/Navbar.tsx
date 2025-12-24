@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import Button from "./Button";
 import Image from "next/image";
 import Logo from "../../public/images/logo/Logo.png";
@@ -24,15 +24,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className="font-medium font-dm-sans lg:relative lg:px-14 md:px-10 px-5 lg:py-8 py-3 w-full flex items-center justify-between  "
-    //     style={{
-    //       borderImage: `repeating-linear-gradient(
-    //   to right,
-    //   #D6D6D6 0 8px,
-    //   transparent 8px 20px
-    // ) 1`,
-    //     }}
-      >
+        className="font-medium font-dm-sans lg:relative lg:px-14 md:px-10 px-5 lg:py-8 py-3 w-full flex items-center justify-between">
         <div className="lg:w-24 w-14 z-10">
           <div className="lg:absolute lg:top-10 top-12">
             <Image src={Logo} alt="logo" height={90} width={90} />

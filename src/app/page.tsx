@@ -10,15 +10,7 @@ export default function Home() {
     <div className="">
       {/* HERO SECTION */}
       <div
-        className="w-full px-4 sm:px-8 md:px-12 pb-10"
-    //     style={{
-    //       borderImage: `repeating-linear-gradient(
-    //   to right,
-    //   #D6D6D6 0 8px,
-    //   transparent 8px 20px
-    // ) 1`,
-    //     }}
-      >
+        className="w-full px-4 sm:px-8 md:px-12 pb-10">
         <div className="pt-16 sm:pt-24 md:pt-32 ">
           <div className="sm:text-2xl md:text-3xl space-y-3 font-dm-sans tracking-tight ">
             <h1>Softwares to power mission critical tasks.</h1>
