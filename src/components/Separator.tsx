@@ -3,7 +3,7 @@ const Separator = () => {
     <div className="relative w-full">
       {/* <div className="border-b border-dashed border-[#E0E0E0]" /> */}
       <div
-        className="border-b-2 border-dashed border-red-500 "
+        className="border-b-2"
         style={{
           borderImage: `repeating-linear-gradient(
                         to right,
@@ -16,14 +16,13 @@ const Separator = () => {
       <div
         className="absolute left-0 top-1/2
                    -translate-y-1/2 -translate-x-1/2
-                   h-2.5 w-2.5 rounded-full bg-white border  border-red-500 z-10"
+                   h-3 w-3 rounded-full bg-white border-2  border-[#D6D6D6] z-10"
       />
       <div
         className="absolute right-0 top-1/2
                    -translate-y-1/2 translate-x-1/2
-                   h-2.5 w-2.5 rounded-full bg-white border border-red-500 z-10"
+                   h-3 w-3 rounded-full bg-white border-2 border-[#D6D6D6] z-10"
       />
-      <div>heyy</div>
     </div>
   );
 };

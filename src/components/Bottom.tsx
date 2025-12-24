@@ -34,7 +34,6 @@ const Bottom = ({ heading, subHeading }: BottomProps) => {
         />
       </div>
     </div>
-    <Separator/>
     </>
   );
 };

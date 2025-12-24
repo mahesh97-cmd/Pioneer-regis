@@ -34,7 +34,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="font-dm-sans">{children}</main>
-          {/* <Footer/> */}
+          <Footer/>
         </div>
       </body>
     </html>
