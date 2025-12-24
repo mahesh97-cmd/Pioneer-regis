@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
      
-      <div className="w-full px-4 sm:px-8 md:px-12 pb-10 border-b-2 border-dashed border-gray-200">
+      <div className="w-full px-4 sm:px-8 md:px-10 pb-10 border-b-2 border-dashed border-gray-200">
         <div className="pt-16 sm:pt-24 md:pt-28">
           <p className=" sm:text-2xl md:text-3xl">
             Softwares to power mission critical tasks.

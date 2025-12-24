@@ -1,11 +1,14 @@
 import React from "react";
 import images from "../config/images";
 import Image from "next/image";
+import HomeCard from "./card/HomeCard";
+import { FiAlertOctagon } from "react-icons/fi";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
-type BottomProps={
-  heading:string,
-  subHeading:string
-}
+type BottomProps = {
+  heading: string;
+  subHeading: string;
+};
 
 const Bottom = ({ heading, subHeading }: BottomProps) => {
   return (
@@ -23,16 +26,49 @@ const Bottom = ({ heading, subHeading }: BottomProps) => {
           </p>
         </div>
       </div>
-      <div className="relative bg-amber-900 w-full lg:h-[500px] h-[200px]">
-        <Image
-          src={images.home}
-          alt="heroimage"
-          fill
-          className="object-cover"
-        />
+      <div className="relative rounded-lg">
+        <div className="hidden lg:block relative w-full h-[600px] rounded-lg overflow-hidden">
+          <Image
+            src={images.home}
+            alt="heroimage"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        <div
+          className="relative lg:absolute lg:bottom-10  
+               w-full  sm:px-6 lg:px-16"
+        >
+          <div
+            className="max-w-7xl mx-auto bg-white 
+                 rounded-xl border border-gray-300 
+                 p-4 sm:p-6 lg:p-8 shadow-md"
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+              <HomeCard
+                icon={FiAlertOctagon}
+                title="The Problem"
+                description="Nulla facilisi. Fusce sit amet arcu nec enim fringilla lacinia. Ut elit sapien, porttitor eget diam et, dictum sagittis urna. Fusce sit amet mi pellentesque, volutpat eros a, consectetur neque."
+              />
+
+              <HomeCard
+                icon={IoMdCheckmarkCircleOutline}
+                title="The Solution"
+                description="Nulla facilisi. Fusce sit amet arcu nec enim fringilla lacinia. Ut elit sapien, porttitor eget diam et, dictum sagittis urna. Fusce sit amet mi pellentesque, volutpat eros a, consectetur neque."
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Bottom;
+
+
+
+
+
