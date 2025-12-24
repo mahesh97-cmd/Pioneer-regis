@@ -1,6 +1,6 @@
 import dashboard from "../../public/images/free-dashboard-templates-1.jpg";
 import hero from "../../public/images/hero.png";
-import main from "../../public/images/home.png";
+import main from "../../public/images/home2.jpg";
 import software from "../../public/images/software.jpg";
 import bottomImg1 from "../../public/images/bottomImg1.avif";
 import bottomImg2 from "../../public/images/bottomImg2.avif";
