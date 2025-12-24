@@ -66,13 +66,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="mt-8">
-              {/* <Button
-                name="Get Started"
-                bgColor="#3B3B3B"
-                textColor="#FFFFFF"
-                border="#E2E2E2"
-                isShow="lg:hidden block"
-              /> */}
+             
               <Button
                 name="Get Started"
                 variant="dark"
@@ -81,14 +75,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
-        {/* <Button
-          name="Get Started"
-          bgColor="#3B3B3B"
-          textColor="#FFFFFF"
-          border="#E2E2E2"
-          isShow="lg:block hidden"
-        /> */}
         <Button
           name="Get Started"
           variant="dark"

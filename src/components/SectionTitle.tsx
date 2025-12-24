@@ -6,7 +6,6 @@ type SectionProps = {
     align?:string
 };
 
-
 const sizeClasses: Record<Width, string> = {
     sm: "w-24",
     md: "w-28",
@@ -26,8 +25,7 @@ const SectionTitle = ({
         rounded-full px-3 py-1
         text-xs font-medium
         whitespace-nowrap ${align==="center"?"text-center":"text-end"}
-      `}
-        >
+      `}>
             {title}
         </div>
     );

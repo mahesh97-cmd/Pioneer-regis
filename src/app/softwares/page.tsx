@@ -1,10 +1,10 @@
 import Button from "@/components/Button";
-import images from "../../config/images";
 import Image from "next/image";
 import Separator from "@/components/Separator";
 import { GoArrowRight } from "react-icons/go";
 import SectionTitle from "@/components/SectionTitle";
 import Section from "@/components/Section";
+import images, { homeContent } from "../../config/images";
 
 const Software = () => {
   return (
@@ -62,36 +62,28 @@ const Software = () => {
       <Section className="md:space-y-12 space-y-10">
         <SectionTitle title="Screenshots" />
         <div className="space-y-5">
-          <div className="w-full h-[600px]  grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-5 ">
-            <div className="lg:col-span-2 h-full">
-              <div className="relative h-full w-full rounded-xl overflow-hidden">
+          <div className=" w-full my-2 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[67%_33%] gap-5">
+            {homeContent.heroImages.map((item, index) => (
+              <div
+                key={`hero-image-${index + 1}`}
+                className={`
+                  bg-neutral-400 min-h-64 rounded-xl overflow-hidden
+                  ${
+                    index === 0
+                      ? "md:col-span-2 lg:col-span-1 lg:row-span-2"
+                      : ""
+                  }
+                `}
+              >
                 <Image
-                  src={images.dashboard}
-                  alt="heroimage"
-                  fill
-                  className="object-cover"
+                  src={item}
+                  alt=""
+                  width={1920}
+                  height={1080}
+                  className="w-full h-full object-cover"
                 />
               </div>
-            </div>
-
-            <div className=" h-full flex lg:flex-col sm:flex-row flex-col lg:gap-8 gap-5">
-              <div className="relative flex-1   rounded-xl overflow-hidden">
-                <Image
-                  src={images.main}
-                  alt="heroimage"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative flex-1  rounded-xl overflow-hidden">
-                <Image
-                  src={images.main}
-                  alt="heroimage"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
+            ))}
           </div>
           <div className="flex items-center justify-end">
             <button className="text-gray-400 flex items-center gap-2 md:text-sm text-xs">

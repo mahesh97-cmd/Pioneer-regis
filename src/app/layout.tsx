@@ -23,11 +23,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmSans.variable} `}>
         <div
-          className="border-x border-transparent w-[85%] mx-auto"
+          className="border-x  border-transparent w-[85%] mx-auto"
           style={{
             borderImage: `repeating-linear-gradient(
       to bottom,
-      #D6D6D6 0 8px,
+      #D6D6D6 0 6px,
       transparent 6px 14px
     ) 1`,
           }}

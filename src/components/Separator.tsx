@@ -2,13 +2,13 @@ const Separator = () => {
   return (
     <div className="relative w-full">
       <div
-        className="border-b-2"
+        className="border-b-2 border-transparent"
         style={{
           borderImage: `repeating-linear-gradient(
-                        to right,
-                        #D6D6D6 0 8px,
-                        transparent 6px 14px
-                        ) 1`,
+      to right,
+      #D6D6D6 0 6px,
+      transparent 6px 14px
+    ) 1`,
         }}
       />
 
